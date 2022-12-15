@@ -1,11 +1,12 @@
 import "./App.css";
 import Title from "./components/Title";
 import Description from "./components/Description";
+import Content from "./components/Content";
 
 function App() {
   return (
     <div>
-      <div className="first-div">
+      <Content className="first-div">
         <Title name="Lorem" />
         <Description
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
@@ -19,8 +20,8 @@ function App() {
         lacinia sem. Pellentesque porta elit at purus sollicitudin, at tempor
         tortor vulputate."
         />
-      </div>
-      <div className="second-div">
+      </Content>
+      <Content className="second-div">
         <Title name="Ipsum" />
         <Description
           text="Cras sollicitudin, velit vitae vehicula laoreet, lorem sem auctor
@@ -38,7 +39,7 @@ function App() {
         consectetur lobortis. Sed rutrum nisl dui, nec pharetra risus laoreet
         ut. Aenean lobortis magna lacus, quis molestie metus rutrum sed."
         />
-      </div>
+      </Content>
     </div>
   );
 }
